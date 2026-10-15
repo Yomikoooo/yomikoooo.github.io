@@ -2,7 +2,8 @@
 
 Academic homepage: https://yomikoooo.github.io/
 
-This is a static website. Edit `index.html` for content and `style.css` for appearance.
+This is a bilingual static website. Edit `index.html` for the English homepage,
+`zh/index.html` for Chinese, and `style.css` for their shared appearance.
 
 To preview locally:
 

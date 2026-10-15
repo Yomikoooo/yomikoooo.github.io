@@ -3,10 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Shuyi Wang is an independent researcher interested in generative modeling, learning dynamics, and efficient inference. Master's degree in computer science from Kyoto University.">
+  <meta name="description" content="Shuyi Wang is an independent machine learning researcher studying generative modeling, learning dynamics, and efficient inference. Current work focuses on finite-step generation and stochastic bridges.">
   <meta name="theme-color" content="#f6f8fb">
   <title>Shuyi Wang — Academic Homepage</title>
   <link rel="canonical" href="https://yomikoooo.github.io/">
+  <link rel="alternate" hreflang="en" href="https://yomikoooo.github.io/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://yomikoooo.github.io/zh/">
+  <link rel="alternate" hreflang="x-default" href="https://yomikoooo.github.io/">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -19,10 +22,15 @@
         <h1>Shuyi Wang</h1>
         <p class="role">Independent Researcher</p>
         <p class="field">Machine Learning</p>
+        <div class="profile-links">
+          <a href="https://github.com/Yomikoooo">GitHub</a>
+          <a href="zh/" lang="zh-Hans" hreflang="zh-Hans">中文</a>
+        </div>
       </div>
       <nav aria-label="Main navigation">
         <a href="#about">About</a>
         <a href="#research">Research</a>
+        <a href="#work">Current Work</a>
         <a href="#education">Education</a>
       </nav>
     </aside>
@@ -30,24 +38,42 @@
     <main id="main">
       <section id="about" aria-labelledby="about-title">
         <h2 id="about-title">About Me</h2>
-        <p>I am an independent researcher working on <strong>generative modeling</strong>, <strong>learning dynamics</strong>, and <strong>efficient inference</strong>. I hold a master's degree in computer science from <a href="https://www.kyoto-u.ac.jp/en">Kyoto University</a>.</p>
-        <p>I am interested in how training objectives shape learned models, and how those models behave when deployed with limited computation. My work combines mathematical analysis with controlled experiments.</p>
+        <p>I am an independent researcher in <strong>machine learning</strong>. I hold a master's degree in Informatics from <a href="https://www.kyoto-u.ac.jp/en">Kyoto University</a>.</p>
+        <p>I study <strong>generative modeling</strong>, <strong>learning dynamics</strong>, and <strong>efficient inference</strong>. My current work focuses on flow and diffusion models: how supervision shapes the models we learn, and how numerical sampling affects the distributions they generate.</p>
+        <p>I combine mathematical analysis with controlled experiments and image-generation studies. A recurring question in my work is when improving a training objective or its fit actually improves generation, especially under a limited computational budget.</p>
+        <p class="opportunities">I am currently seeking research assistant (RA) positions and Ph.D. opportunities in machine learning. I welcome remote research opportunities and am also open to on-site positions.</p>
       </section>
 
       <section id="research" aria-labelledby="research-title">
         <h2 id="research-title">Research Interests</h2>
         <div class="research-list">
           <article>
-            <h3>Generative Modeling</h3>
-            <p>Flow and diffusion models, distribution transport, and the relationship between training targets and generated distributions.</p>
+            <h3>Generative Modeling and Distribution Transport</h3>
+            <p>Flow and diffusion models, stochastic bridges, and the relationship between local dynamics and generated distributions.</p>
           </article>
           <article>
-            <h3>Learning Dynamics</h3>
-            <p>How changes to supervision are realized during training, and how learning errors affect model behavior.</p>
+            <h3>Learning Dynamics and Supervision</h3>
+            <p>How training objectives, label noise, and model structure shape learning, and when better fitting leads to better task performance.</p>
           </article>
           <article>
-            <h3>Efficient Inference</h3>
-            <p>Finite-step generation and the tradeoffs between model quality, numerical integration, and computational cost.</p>
+            <h3>Efficient Generation and Inference</h3>
+            <p>Few-step sampling, distillation, and the trade-offs between generation quality, training cost, and inference time.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="work" aria-labelledby="work-title">
+        <h2 id="work-title">Current Research</h2>
+        <div class="research-list">
+          <article>
+            <h3>Finite-Step Generation, Learning, and Transport</h3>
+            <p class="research-status">Ongoing research</p>
+            <p>I investigate the relationship between finite-time prediction, distribution transport, and the behavior of trained generators. This work examines how target bias and fitting errors affect a sequence of generation steps, and evaluates supervision for adapting pretrained models to few-step generation.</p>
+          </article>
+          <article>
+            <h3>Stochastic Bridges and Structured Generative Learning</h3>
+            <p class="research-status">Ongoing research</p>
+            <p>Building on my master's research, I study generative models based on stochastic bridges. I examine how path design, supervision, and model structure affect learning and sampling, with the aim of using probabilistic structure to improve generation at a finite number of model evaluations.</p>
           </article>
         </div>
       </section>
@@ -57,9 +83,23 @@
         <div class="education-entry">
           <div>
             <h3><a href="https://www.kyoto-u.ac.jp/en">Kyoto University</a></h3>
-            <p>Master's degree in Computer Science</p>
+            <p>M.Sc. in Informatics</p>
+            <p class="advisors">Advisors: <a href="https://www-adsys.sys.i.kyoto-u.ac.jp/tt/Tanaka-e.html">Toshiyuki Tanaka</a> and <a href="https://kdb.iimc.kyoto-u.ac.jp/profile/en.bc76166c8b6e3497.html">Tomoyuki Obuchi</a></p>
           </div>
-          <span class="location">Kyoto, Japan</span>
+          <div class="education-meta">
+            <span class="dates">Apr 2023–Mar 2025</span>
+            <span class="location">Kyoto, Japan</span>
+          </div>
+        </div>
+        <div class="education-entry">
+          <div>
+            <h3><a href="https://www.njupt.edu.cn/">Nanjing University of Posts and Telecommunications (NJUPT)</a></h3>
+            <p>B.Eng. in Digital Media Technology</p>
+          </div>
+          <div class="education-meta">
+            <span class="dates">Sep 2017–Jun 2021</span>
+            <span class="location">Nanjing, China</span>
+          </div>
         </div>
       </section>
 
