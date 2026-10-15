@@ -13,4 +13,6 @@ python3 -m http.server 8773 --bind 127.0.0.1
 
 Then open http://127.0.0.1:8773/.
 
-GitHub Pages publishes the root of the `main` branch. Changes pushed to `main` are deployed automatically.
+The repository is private and GitHub Pages is currently disabled. Use the local
+preview while the site is being prepared. The intended Pages source, when
+publication is requested, is the root of the `main` branch.
