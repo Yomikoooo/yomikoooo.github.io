@@ -63,6 +63,8 @@ h3 { margin: 0 0 5px; font-size: 16px; font-weight: 600; line-height: 1.5; }
 .research-list article:first-child { padding-top: 0; }
 .research-list article:last-child { padding-bottom: 0; border-bottom: 0; }
 .research-list p { margin: 0; font-size: 15px; color: var(--muted); }
+.research-list .project-meta { margin-top: 10px; font-size: 14px; color: var(--text); }
+.research-list + .section-note { margin-top: 18px; }
 .section-note { font-size: 15px; color: var(--muted); }
 .education-entry { display: flex; justify-content: space-between; align-items: baseline; gap: 18px; }
 .education-entry + .education-entry { margin-top: 24px; padding-top: 24px; border-top: 1px solid var(--border); }
