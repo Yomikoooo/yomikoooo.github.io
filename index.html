@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Shuyi Wang studies few-step image generation and parallel decoding in diffusion language models. Independent machine learning researcher with an M.Sc. from Kyoto University.">
+  <meta name="description" content="Shuyi Wang studies diffusion language models, parallel decoding, and few-step image generation. Incoming research assistant at SUSTech, starting December 2026.">
   <meta name="theme-color" content="#f6f8fb">
   <title>Shuyi Wang — Academic Homepage</title>
   <link rel="canonical" href="https://yomikoooo.github.io/">
@@ -27,9 +27,9 @@
           <a class="social-icon" href="https://x.com/yzr990220" aria-label="X: @yzr990220" title="@yzr990220">
             <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.64 7.584H.47l8.6-9.835L0 1.154h7.594l5.243 6.932Zm-1.29 19.49h2.039L6.487 3.24H4.3Z"/></svg>
           </a>
-          <a class="contact-email" href="mailto:wang.shuyi.y89@kyoto-u.jp">
+          <a class="contact-email" href="mailto:shuyiwang220@gmail.com">
             <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg>
-            <span>wang.shuyi.y89@kyoto-u.jp</span>
+            <span>shuyiwang220@gmail.com</span>
           </a>
         </div>
       </div>
@@ -47,49 +47,48 @@
           <h2 id="about-title">About Me</h2>
           <a class="language-switch" href="zh/" lang="zh-Hans" hreflang="zh-Hans">中文</a>
         </div>
-        <p>I am an independent researcher in <strong>machine learning</strong>. I received my M.Sc. in Informatics from <a href="https://www.kyoto-u.ac.jp/en">Kyoto University</a> in March 2025.</p>
-        <p><strong>Better generation with limited computation.</strong> I combine mathematical analysis with experiments on sampling and fine-tuning, from few-step image generation to parallel text generation.</p>
-        <p class="opportunities">I am seeking research assistant (RA) positions and Ph.D. opportunities in machine learning. I am open to both remote and on-site positions.</p>
+        <p>In December 2026, I will join <a href="https://www.sustech.edu.cn/en/faculties/wangzhenyi.html">Prof. Zhenyi Wang</a>’s group as a research assistant in the Department of Biomedical Engineering at Southern University of Science and Technology (SUSTech). I received my M.Sc. in Informatics from <a href="https://www.kyoto-u.ac.jp/en">Kyoto University</a> in March 2025.</p>
+        <p class="opportunities">I am interested in Ph.D. opportunities in machine learning.</p>
       </section>
 
       <section id="research" aria-labelledby="research-title">
         <h2 id="research-title">Research Interests</h2>
-        <div class="research-list">
-          <article>
-            <h3>Generative Modeling and Distribution Transport</h3>
-            <p>Flow and diffusion models, stochastic bridges, and the relationship between local dynamics and generated distributions.</p>
-          </article>
-          <article>
-            <h3>Learning Dynamics and Supervision</h3>
-            <p>How training objectives, label noise, and model structure shape learning, and when better fitting leads to better task performance.</p>
-          </article>
-          <article>
-            <h3>Efficient Generation and Inference</h3>
-            <p>Sampling and fine-tuning under limited compute budgets, and the trade-off between generation quality and training and inference costs.</p>
-          </article>
-        </div>
+        <p>I study how to generate images and text with fewer model evaluations. In diffusion language models, I study when several tokens can be written in parallel while preserving answer accuracy. In image generation, I study how to choose the few steps a diffusion or flow model takes to turn noise into an image.</p>
+        <p>I am also interested in how training objectives, label noise and model structure affect what a model learns.</p>
       </section>
 
       <section id="experience" aria-labelledby="experience-title">
         <h2 id="experience-title">Research Experience</h2>
-        <div class="research-list">
-          <article>
-            <h3>Few-Step Generation: Theory, Training, and Sampling</h3>
-            <p>I lead research on how to make effective use of a pretrained generator's limited calls, and when fine-tuning adds value. The work spans diffusion, consistency and flow-map models, including Transformer-based image generators. I develop the mathematical analysis, model adapters, evaluation tools and resumable multi-GPU experiments.</p>
-            <p class="project-meta"><strong>Shuyi Wang</strong>, Chuang Ma, Tomoyuki Obuchi, Toshiyuki Tanaka</p>
-          </article>
-          <article>
-            <h3>Parallel Decoding in Diffusion Language Models</h3>
-            <p>Why can a diffusion language model solve a math problem one token at a time yet miss it when writing several tokens at once? We compare decoding and fine-tuning choices by measuring both answer accuracy and generation time.</p>
-            <p class="project-meta"><strong>Shuyi Wang</strong>, Zhenyi Wang</p>
-          </article>
-          <article>
-            <h3>Stochastic Bridges and Generative Modeling</h3>
-            <p>This research began during my master's studies at Kyoto University and continued through independent work. I study stochastic bridges and distribution transport, focusing on how path construction, model structure and supervision affect finite-step generation.</p>
-            <p class="project-meta"><strong>Shuyi Wang</strong>, Chuang Ma, Tomoyuki Obuchi, Toshiyuki Tanaka</p>
-          </article>
+        <div class="research-group">
+          <h3>Few-Step Image Generation</h3>
+          <div class="research-list">
+            <article>
+              <h4>Sampling and Fine-Tuning</h4>
+              <p>If a generator has time for one more model call, where should it spend it? I lead the mathematical analysis and experiments on how the choice of sampling steps and training objective affects the final images.</p>
+              <p class="project-meta"><strong>Shuyi Wang</strong>, Chuang Ma, Tomoyuki Obuchi, Toshiyuki Tanaka</p>
+            </article>
+            <article>
+              <h4>Stochastic Bridges and Distribution Transport</h4>
+              <p>During my master's at Kyoto University, I studied stochastic paths that connect noise to data. I continued this work after graduation to understand how a generator can follow those paths in a small number of steps.</p>
+              <p class="project-meta"><strong>Shuyi Wang</strong>, Chuang Ma, Tomoyuki Obuchi, Toshiyuki Tanaka</p>
+            </article>
+          </div>
         </div>
-        <p class="section-note">Manuscripts are in preparation.</p>
+        <div class="research-group">
+          <h3>Diffusion Language Models</h3>
+          <div class="research-list">
+            <article>
+              <h4>Parallel Decoding</h4>
+              <p>Why can a diffusion language model solve a math problem one token at a time yet miss it when writing several tokens at once? We compare decoding and fine-tuning choices by measuring both answer accuracy and generation time.</p>
+              <p class="project-meta"><strong>Shuyi Wang</strong>, Zhenyi Wang</p>
+            </article>
+            <article>
+              <h4>Conditional Text Generation</h4>
+              <p>In an independent project, I adapted SEDD, a discrete diffusion model, to generate answers to prompts and studied how truncation and padding affect its evaluation.</p>
+            </article>
+          </div>
+        </div>
+        <p class="section-note">Manuscripts on few-step image sampling, stochastic bridges and parallel decoding are in preparation.</p>
       </section>
 
       <section id="education" aria-labelledby="education-title">
@@ -99,6 +98,7 @@
             <h3><a href="https://www.kyoto-u.ac.jp/en">Kyoto University</a></h3>
             <p>M.Sc. in Informatics</p>
             <p class="advisors">Advisors: <a href="https://www-adsys.sys.i.kyoto-u.ac.jp/tt/Tanaka-e.html">Toshiyuki Tanaka</a> and <a href="https://kdb.iimc.kyoto-u.ac.jp/profile/en.bc76166c8b6e3497.html">Tomoyuki Obuchi</a></p>
+            <p>Kyoto University alumni email &middot; <a href="mailto:wang.shuyi.y89@kyoto-u.jp">wang.shuyi.y89@kyoto-u.jp</a></p>
           </div>
           <div class="education-meta">
             <span class="dates">Apr 2023–Mar 2025</span>
@@ -119,7 +119,7 @@
 
       <footer>
         <span>© 2026 Shuyi Wang</span>
-        <span>Last updated: <time datetime="2026-11-24">November 24, 2026</time></span>
+        <span>Last updated: <time datetime="2026-11-25">November 25, 2026</time></span>
       </footer>
     </main>
   </div>
